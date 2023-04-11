@@ -46,3 +46,9 @@ button{
     color: whitesmoke;
     width: 8vw;
 }
+
+ul{
+    margin-top: 20px;
+    font-size: 1.8vw;
+    list-style:square;
+}

@@ -1,6 +1,7 @@
 const hourElement = document.querySelector('#hours');
 const minuteElement = document.querySelector('#minutes');
 const secondElement = document.querySelector('#seconds');
+const lapElement = document.querySelector('.lap');
 
 let buttonState = false; //State of the start button
 
@@ -47,6 +48,21 @@ function reset() {
     buttonState = false
     clearTimeout();
     time = [0,0,0];
+    lapElement.innerHTML = '';
     modify();
 
+}
+
+function arrayToText() {
+    let stringHour = time[0] < 10 ? ('0'+time[0])  : time[0];
+    let stringMinute = time[1] < 10 ? ('0'+time[1])  : time[1];
+    let stringSecond = time[2] < 10 ? ('0'+time[2])  : time[2];
+    return stringHour + ':' + stringMinute + ':' + stringSecond;
+}
+
+function lap() {
+    const textNode = document.createTextNode(arrayToText());
+    let node = document.createElement('li');
+    node.appendChild(textNode);
+    lapElement.appendChild(node);
 }
