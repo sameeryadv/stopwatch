@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    background-image: url('Conquering-the-mountains-2.jpg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container{
+    border-radius: 70px ;
+    backdrop-filter: blur(30px) ;
+    margin: auto;
+    width: 70vw;
+    text-align: center;
+    font-size: 5vw;
+    height:30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
