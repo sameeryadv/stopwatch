@@ -31,3 +31,18 @@ body{
     align-content: center;
     flex-wrap: wrap;
 }
+
+.buttons{
+    margin-top: 24px;
+}
+
+button{
+    border: none;
+    background-color: #c47260;
+    font-size: 1.5vw;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Inconsolate', monospace;
+    color: whitesmoke;
+    width: 8vw;
+}

@@ -9,13 +9,15 @@ const elements = [hourElement,minuteElement,secondElement];
 let time = [0,0,0];
 
 function modify() {
-    time[2]++;
+    if (buttonState) {
+        time[2]++;
     time[2] == 60 ? time[1]++ : time[1];
     time[1] == 60 ? time[0]++ : time[0]; 
 
     time.forEach((value,index) => {
         time[index] = value%60;
     })
+    }
     render()
 }
 
